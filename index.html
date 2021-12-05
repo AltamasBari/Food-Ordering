@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css+animate.css+owl.ca.css" />
 </head>
 <body>
@@ -16,14 +17,14 @@
       <div class="row d-flex">
       <div class="col-md pr-4 d-flex topper align-items-center">
     <div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
-<span class="text"><strong>+91 8917286423</strong></span>
+<span class="text"><i class="fas fa-mobile-alt mr-2"></i><strong> +91-8917286423</strong></span>
 </div>
 <div class="col-md pr-4 d-flex topper align-items-center">
-  <div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
-    <span class="text"><a href="https://preview.colorlib.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="146d7b61667179757d78547179757d783a777b79"><strong>www.BellyfulFoodhub.com</strong></a></span>
+  <div class="icon mr-2 d-flex justify-content-center align-items-center"><i class="fas fa-paper-plane"></i></div>
+    <span class="text"><a href="mailto:belyful@gmail.com" class="__cf_email__"><strong>www.BellyfulFoodhub.com</strong></a></span>
 </div>
 <div class="col-md-5 pr-4 d-flex topper align-items-center text-lg-right justify-content-end">
-<p class="mb-0 register-link"><span><b>Open hours:</b></span> <span><strong>Monday - Sunday</strong></span> <span><strong>8:00AM - 9:00PM</strong></span></p>
+<p class="mb-0 register-link"><span><i class="fas fa-clock mr-2"></i><b>Open hours:</b></span> <span><strong>Monday - Sunday</strong></span> <span><strong>8:00AM - 9:00PM</strong></span></p>
 </div>
 </div>
 </div>
@@ -42,7 +43,9 @@
     <li class="nav-item"><a href="./about.html" class="nav-link">About</a></li>
     <li class="nav-item"><a href="./menu.html" class="nav-link">Menu</a></li>
     <li class="nav-item"><a href="./contact.html" class="nav-link">Contact</a></li>
-    <li class="nav-item cta"><a href="./reservation.html" class="nav-link">Order Now</a></li>
+    <li class="nav-item cta"><a onclick="opencart();" class="nav-link"><span class="px-2"><i class="fas fa-cart-plus"></i></span>Cart<span class="px-2" id="itemcount">(0)</span></a></li>
+    <li class="nav-item"><a href="./reservation.html" class="nav-link">Reserve a table</a></li>
+    
   </ul>
 </div>
 </div>
@@ -52,8 +55,8 @@
 <div class="slider-item js-fullheight" style="background-image:url(./images/xbg_1.jpg.pagespeed.ic.fr5R6zAvsf.webp)">
 <div class="overlay"></div>
 <div class="container">
- <div class="row slider-text js-fullheight justify-content-center align-items-center" data-scrollax-parent="true">
-<div class="col-md-12 col-sm-12 text-center ftco-animate">
+<div class="row slider-text js-fullheight justify-content-center align-items-center" data-scrollax-parent="true">
+<div class="col-md-10 col-sm-12 text-center ftco-animate">
 <span class="subheading">Bellyful Foodhub</span>
 <h1 class="mb-4">Best Restaurant</h1>
 </div>
@@ -154,10 +157,8 @@
 </section>
 <section class="ftco-section ftco-counter img ftco-no-pt" id="section-counter">
 <div class="container">
-<div class="row d-md-flex">
-<div class="col-md-9">
 <div class="row d-md-flex align-items-center">
-<div class="col-md-6 col-lg-3 mb-4 mb-lg-0 d-flex justify-content-center counter-wrap ftco-animate">
+<div class="col-md-3 col-lg-2 mb-4 mb-lg-0 d-flex justify-content-center counter-wrap ftco-animate">
 <div class="block-18">
 <div class="text">
 <strong class="number" data-number="18">0</strong>
@@ -165,7 +166,7 @@
 </div>
 </div>
 </div>
-<div class="col-md-6 col-lg-3 mb-4 mb-lg-0 d-flex justify-content-center counter-wrap ftco-animate">
+<div class="col-md-3 col-lg-2 mb-4 mb-lg-0 d-flex justify-content-center counter-wrap ftco-animate">
 <div class="block-18">
 <div class="text">
 <strong class="number" data-number="100">0</strong>
@@ -173,7 +174,7 @@
 </div>
 </div>
 </div>
-<div class="col-md-6 col-lg-3 mb-4 mb-lg-0 d-flex justify-content-center counter-wrap ftco-animate">
+<div class="col-md-3 col-lg-2 mb-4 mb-lg-0 d-flex justify-content-center counter-wrap ftco-animate">
 <div class="block-18">
 <div class="text">
 <strong class="number" data-number="50">0</strong>
@@ -181,7 +182,8 @@
 </div>
 </div>
 </div>
-<div class="col-md-6 col-lg-3 mb-4 mb-lg-0 d-flex justify-content-center counter-wrap ftco-animate">
+
+<div class="col-md-3 col-lg-2 mb-4 mb-lg-0 d-flex justify-content-center counter-wrap ftco-animate">
 <div class="block-18">
 <div class="text">
 <strong class="number" data-number="15000">0</strong>
@@ -190,58 +192,15 @@
 </div>
 </div>
 </div>
-</div>
-<div class="col-md-3 text-center text-md-left">
+<div class="row d-md-flex align-items-center">
+<div class="col-md-12 text-center text-md-center mt-3">
 <p>Customers use our platform to search and discover restaurants, read and write customer generated reviews and view and upload photos, order food delivery, Order Now and make payments while dining-out at restaurants.</p>
 </div>
 </div>
 </div>
+</div>
 </section>
-<!--<section class="ftco-section bg-light">
-<div class="container">
-<div class="row justify-content-center mb-5 pb-2">
-<div class="col-md-12 text-center heading-section ftco-animate">
-<span class="subheading">Services</span>
-<h2 class="mb-4">Catering Services</h2>
-</div>
-</div>
-<div class="row">
-<div class="col-md-4 d-flex align-self-stretch ftco-animate text-center">
-<div class="media block-6 services d-block">
-<div class="icon d-flex justify-content-center align-items-center">
-<span class="flaticon-cake"></span>
-</div>
-<div class="media-body p-2 mt-3">
-<h3 class="heading">Birthday Party</h3>
-<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-</div>
-</div>
-</div>
-<div class="col-md-4 d-flex align-self-stretch ftco-animate text-center">
-<div class="media block-6 services d-block">
-<div class="icon d-flex justify-content-center align-items-center">
-<span class="flaticon-meeting"></span>
-</div>
-<div class="media-body p-2 mt-3">
-<h3 class="heading">Business Meetings</h3>
-<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-</div>
-</div>
-</div>
-<div class="col-md-4 d-flex align-self-stretch ftco-animate text-center">
-<div class="media block-6 services d-block">
-<div class="icon d-flex justify-content-center align-items-center">
-<span class="flaticon-tray"></span>
-</div>
-<div class="media-body p-2 mt-3">
-<h3 class="heading">Wedding Party</h3>
-<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>-->
+
 <section class="ftco-section">
 <div class="container">
 <div class="row no-gutters justify-content-center mb-5 pb-2">
@@ -265,7 +224,7 @@
 </div>
 </div>
 <p><span>Soba Noodles</span>, <span>Pan fried tofu</span>, <span>Maple Seeds</span>, <span>Black Pepper Sauce</span></p>
-<p><a href="index.html#" class="btn btn-primary">Order now</a></p>
+<p><button class="btn btn-primary" onclick="additem(this)" data-uid="1" data-name="Japanese Sab Noodles" data-price="Rs.259/-">Add to cart</button></p>
 </div>
 </div>
 </div>
@@ -284,7 +243,7 @@
 </div>
 </div>
 <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-<p><a href="index.html#" class="btn btn-primary">Order now</a></p>
+<p><button class="btn btn-primary" onclick="additem(this)" data-uid="2" data-name="Grilled Chicken with potatoes" data-price="Rs.300/-">Order now</button></p>
 </div>
 </div>
 </div>
@@ -303,7 +262,7 @@
 </div>
 </div>
 <p><span>Chopped Bananas</span>, <span>Walnuts</span>, <span>Cashews</span>, <span>Sugar Banana Syrup</span></p>
-<p><a href="index.html#" class="btn btn-primary">Order now</a></p>
+<p><button class="btn btn-primary" onclick="additem(this)" data-uid="3" data-name="Banana Fritters with mini-pancakes" data-price="Rs.165/-">Order now</button></p>
 </div>
 </div>
 </div>
@@ -322,7 +281,7 @@
 </div>
 </div>
 <p><span>Fried Chicken</span>, <span>Garlic Chilli Sauce</span>, <span>ButterMilk</span>, <span>Tomatoe</span></p>
-<p><a href="index.html#" class="btn btn-primary">Order now</a></p>
+<p><button class="btn btn-primary" onclick="additem(this)" data-uid="4" data-name="Fried Garlic Chicken with sprinkled coriander" data-price="Rs.199/-">Order now</button></p>
 </div>
 </div>
 </div>
@@ -341,7 +300,8 @@
 </div>
 </div>
 <p><span>Bread Toast</span>, <span>Coriander Leaves</span>, <span>Mayonnaise Sauce</span>, <span>Brocolli</span></p>
-<p><a href="index.html#" class="btn btn-primary">Order now</a></p>
+<p><button class="btn btn-primary" onclick="additem(this)" data-uid="5" 
+  data-name="Green Bread Pudding" data-price="Rs.149/-">Order now</button></p>
 </div>
 </div>
 </div>
@@ -360,7 +320,9 @@
 </div>
 </div>
 <p><span>Avocado</span>, <span>Indigenuos Green Vegies</span>, <span>Black Pepper</span>, <span>Egg White</span></p>
-<p><a href="index.html#" class="btn btn-primary">Order now</a></p>
+<p><button class="btn btn-primary" onclick="additem(this)" data-uid="6" 
+  data-name="Avocado Club Salad" data-price="Rs.279/-"
+  >Order now</button></p>
 </div>
 </div>
 </div>
@@ -451,7 +413,7 @@
 <div class="testimony-wrap text-center pb-5">
 <div class="user-img mb-4" style="background-image:url(images/xperson_1.jpg.pagespeed.ic.P4pHl6glbj.jpg)">
 <span class="quote d-flex align-items-center justify-content-center">
-<i class="icon-quote-left"></i>
+  <i class="fas fa-quote-left"></i>
 </span>
 </div>
 <div class="text p-3">
@@ -465,7 +427,7 @@
 <div class="testimony-wrap text-center pb-5">
 <div class="user-img mb-4" style="background-image:url(./images/xperson_2.jpg.pagespeed.ic.Xrdu_nPZRp.jfif)">
 <span class="quote d-flex align-items-center justify-content-center">
-<i class="icon-quote-left"></i>
+  <i class="fas fa-quote-left"></i>
 </span>
 </div>
 <div class="text p-3">
@@ -479,7 +441,7 @@
 <div class="testimony-wrap text-center pb-5">
 <div class="user-img mb-4" style="background-image:url(./images/xperson_3.jpg.pagespeed.ic.Cln-jaM1jK.jfif)">
 <span class="quote d-flex align-items-center justify-content-center">
-<i class="icon-quote-left"></i>
+  <i class="fas fa-quote-left"></i>
 </span>
 </div>
 <div class="text p-3">
@@ -493,7 +455,7 @@
 <div class="testimony-wrap text-center pb-5">
 <div class="user-img mb-4" style="background-image:url(./images/xperson_4.jpg.pagespeed.ic.ucbtJ1Htlo.jfif)">
 <span class="quote d-flex align-items-center justify-content-center">
-<i class="icon-quote-left"></i>
+  <i class="fas fa-quote-left"></i>
 </span>
 </div>
 <div class="text p-3">
@@ -507,7 +469,7 @@
 <div class="testimony-wrap text-center pb-5">
 <div class="user-img mb-4" style="background-image:url(./images/xperson_1.jpg.pagespeed.ic.P4pHl6glbj.jpg)">
 <span class="quote d-flex align-items-center justify-content-center">
-<i class="icon-quote-left"></i>
+  <i class="fas fa-quote-left"></i>
 </span>
 </div>
 <div class="text p-3">
@@ -593,9 +555,9 @@
 <h2 class="ftco-heading-2">Bellyful Foodhub</h2>
 <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
 <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
-<li class="ftco-animate"><a href="index.html#"><span class="icon-twitter"></span></a></li>
-<li class="ftco-animate"><a href="index.html#"><span class="icon-facebook"></span></a></li>
-<li class="ftco-animate"><a href="index.html#"><span class="icon-instagram"></span></a></li>
+<li class="ftco-animate"><a href="index.html#"><span class="fab fa-twitter"></span></a></li>
+<li class="ftco-animate"><a href="index.html#"><span class="fab fa-facebook-messenger"></span></a></li>
+<li class="ftco-animate"><a href="index.html#"><span class="fab fa-instagram"></span></a></li>
 </ul>
 </div>
 </div>
@@ -617,19 +579,19 @@
 <div class="ftco-footer-widget mb-4">
 <h2 class="ftco-heading-2">Instagram</h2>
 <div class="thumb d-sm-flex">
-<a href="index.html#" class="thumb-menu img" style="background-image:url(images/xinsta-1.jpg.pagespeed.ic.gCaYvVg8B6.jpg)">
+<a href="index.html#" class="thumb-menu img" style="background-image:url(./images/xinsta-1.jpg.pagespeed.ic.WRwgq-vxaD.jfif)">
 </a>
-<a href="index.html#" class="thumb-menu img" style="background-image:url(images/xinsta-2.jpg.pagespeed.ic.xFyC9r5m_d.jpg)">
+<a href="index.html#" class="thumb-menu img" style="background-image:url(./images/xinsta-2.jpg.pagespeed.ic.qCi3QqEcr1.jfif)">
 </a>
-<a href="index.html#" class="thumb-menu img" style="background-image:url(images/xinsta-3.jpg.pagespeed.ic.ahfm5l466y.jpg)">
+<a href="index.html#" class="thumb-menu img" style="background-image:url(./images/xinsta-3.jpg.pagespeed.ic.e8JUIHgfyF.jfif)">
 </a>
 </div>
 <div class="thumb d-flex">
-<a href="https://preview.colorlib.com/theme/feliciano/index.html#" class="thumb-menu img" style="background-image:url(images/xinsta-4.jpg.pagespeed.ic.LcOAfq2OLL.jpg)">
+<a href="./index.html#" class="thumb-menu img" style="background-image:url(./images/xinsta-4.jpg.pagespeed.ic.5aKPNrRvM0.jfif)">
 </a>
-<a href="https://preview.colorlib.com/theme/feliciano/index.html#" class="thumb-menu img" style="background-image:url(images/xinsta-5.jpg.pagespeed.ic.1A4rLh8GnA.jpg)">
+<a href="./index.html#" class="thumb-menu img" style="background-image:url(./images/xinsta-5.jpg.pagespeed.ic.R22CfBvKGc.jfif)">
 </a>
-<a href="https://preview.colorlib.com/theme/feliciano/index.html#" class="thumb-menu img" style="background-image:url(images/xinsta-6.jpg.pagespeed.ic.4bh7RxdMl3.jpg)">
+<a href="./index.html#" class="thumb-menu img" style="background-image:url(./images/xlunch-6.jpg.pagespeed.ic.AHBvR_-byz.webp)">
 </a>
 </div>
 </div>
@@ -659,6 +621,8 @@ Copyright &copy;<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728
 
 <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" /><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" /></svg></div>
 <script src="js/jquery.min.js"></script>
+<script src="js/main.js"></script>
+
 <script src="js/jquery-migrate-3.0.1.min.js+popper.min.js+bootstrap.min.js.pagespeed.jc.IQ_SRk8I0J.js"></script><script>eval(mod_pagespeed_JbYhMf9Iz9);</script>
 <script>eval(mod_pagespeed_ckvjIE4Jm9);</script>
 <script>eval(mod_pagespeed_jV5e6asuIo);</script>
