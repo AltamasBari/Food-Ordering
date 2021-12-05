@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>BellyFul Foodhub</title>
+<title>Bellyful Foodhub</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
@@ -31,23 +31,25 @@
   </div>
   </div>
   </div>
-<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-<div class="container">
-<a class="navbar-brand" href="./index.html">BellyfulFoodhub</a>
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-<span class="oi oi-menu"></span> Menu
-</button>
-<div class="collapse navbar-collapse" id="ftco-nav">
-<ul class="navbar-nav ml-auto">
-<li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
-<li class="nav-item"><a href="./about.html" class="nav-link">About</a></li>
-<li class="nav-item"><a href="./menu.html" class="nav-link">Menu</a></li>
-<li class="nav-item"><a href="./contact.html" class="nav-link">Contact</a></li>
-<li class="nav-item cta"><a href="./reservation.html" class="nav-link">Order Now</a></li>
-</ul>
-</div>
-</div>
-</nav>
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+    <a class="navbar-brand" href="./index.html">Bellyful Foodhub</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="oi oi-menu"></span> Menu
+    </button>
+    <div class="collapse navbar-collapse" id="ftco-nav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="./about.html" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="./menu.html" class="nav-link">Menu</a></li>
+        <li class="nav-item"><a href="./contact.html" class="nav-link">Contact</a></li>
+        <li class="nav-item cta"><a href="./cart.html" class="nav-link"><span class="px-2"><i class="fas fa-cart-plus"></i></span>Cart<span class="px-2" id="itemcount">(0)</span></a></li>
+        <li class="nav-item active"><a href="./reservation.html" class="nav-link">Reserve a table</a></li>
+        
+      </ul>
+    </div>
+    </div>
+    </nav>
 
 <section class="hero-wrap hero-wrap-2" style="background-image:url(./images/xbg_3.jpg.pagespeed.ic.RHn8WPcUap.jfif)" data-stellar-background-ratio="0.5">
 <div class="overlay"></div>
@@ -69,36 +71,36 @@
 <span class="subheading">Order Now</span>
 <h2 class="mb-4">Make Reservation</h2>
 </div>
-<form action="#">
+<form onsubmit="alert('Your table has been booked. Thank You!!')">
 <div class="row">
 <div class="col-md-6">
 <div class="form-group">
 <label for="">Name</label>
-<input type="text" class="form-control" placeholder="Your Name">
+<input type="text" class="form-control" placeholder="Your Name" required>
 </div>
 </div>
 <div class="col-md-6">
 <div class="form-group">
 <label for="">Email</label>
-<input type="text" class="form-control" placeholder="Your Email">
+<input type="email" class="form-control" placeholder="Your Email">
 </div>
 </div>
 <div class="col-md-6">
 <div class="form-group">
 <label for="">Phone</label>
-<input type="text" class="form-control" placeholder="Phone">
+<input type="tel" class="form-control" placeholder="Phone" required>
 </div>
 </div>
 <div class="col-md-6">
 <div class="form-group">
-<label for="">Phone</label>
-<input type="text" class="form-control" id="book_date" placeholder="Date">
+<label for="">Date</label>
+<input type="date" class="form-control" placeholder="Date" required>
 </div>
 </div>
 <div class="col-md-6">
 <div class="form-group">
 <label for="">Time</label>
-<input type="text" class="form-control" id="book_time" placeholder="Time">
+<input type="time" class="form-control" placeholder="Time" required> 
 </div>
 </div>
 <div class="col-md-6">
@@ -106,7 +108,7 @@
 <label for="">Person</label>
 <div class="select-wrap one-third">
 <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-<select name="" id="" class="form-control">
+<select name="" class="form-control" required>
 <option value="">Person</option>
 <option value="">1</option>
 <option value="">2</option>
@@ -118,7 +120,7 @@
 </div>
 <div class="col-md-12 mt-3">
 <div class="form-group">
-<input type="submit" value="Order Your Food" class="btn btn-primary py-3 px-5">
+<input type="submit" value="Reserve Table" class="btn btn-primary py-3 px-5">
 </div>
 </div>
 </div>
@@ -132,34 +134,34 @@
 </div>
 </section>
 <footer class="ftco-footer ftco-bg-dark ftco-section">
-<div class="container">
-<div class="row mb-5">
-<div class="col-md-6 col-lg-3">
-<div class="ftco-footer-widget mb-4">
-<h2 class="ftco-heading-2">BellyfulFoodhub</h2>
-<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
-<li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-<li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-<li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-</ul>
-</div>
-</div>
-<div class="col-md-6 col-lg-3">
-<div class="ftco-footer-widget mb-4">
-<h2 class="ftco-heading-2">Open Hours</h2>
-<ul class="list-unstyled open-hours">
-<li class="d-flex"><span>Monday</span><span>9:00 - 24:00</span></li>
-<li class="d-flex"><span>Tuesday</span><span>9:00 - 24:00</span></li>
-<li class="d-flex"><span>Wednesday</span><span>9:00 - 24:00</span></li>
-<li class="d-flex"><span>Thursday</span><span>9:00 - 24:00</span></li>
-<li class="d-flex"><span>Friday</span><span>9:00 - 02:00</span></li>
-<li class="d-flex"><span>Saturday</span><span>9:00 - 02:00</span></li>
-<li class="d-flex"><span>Sunday</span><span> 9:00 - 02:00</span></li>
-</ul>
-</div>
-</div>
-<div class="col-md-6 col-lg-3">
+  <div class="container">
+  <div class="row mb-5">
+  <div class="col-md-6 col-lg-3">
+  <div class="ftco-footer-widget mb-4">
+  <h2 class="ftco-heading-2">Bellyful Foodhub</h2>
+  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+  <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
+  <li class="ftco-animate"><a href="index.html#"><span class="fab fa-twitter"></span></a></li>
+  <li class="ftco-animate"><a href="index.html#"><span class="fab fa-facebook-messenger"></span></a></li>
+  <li class="ftco-animate"><a href="index.html#"><span class="fab fa-instagram"></span></a></li>
+  </ul>
+  </div>
+  </div>
+  <div class="col-md-6 col-lg-3">
+  <div class="ftco-footer-widget mb-4">
+  <h2 class="ftco-heading-2">Open Hours</h2>
+  <ul class="list-unstyled open-hours">
+  <li class="d-flex"><span>Monday</span><span>9:00 - 24:00</span></li>
+  <li class="d-flex"><span>Tuesday</span><span>9:00 - 24:00</span></li>
+  <li class="d-flex"><span>Wednesday</span><span>9:00 - 24:00</span></li>
+  <li class="d-flex"><span>Thursday</span><span>9:00 - 24:00</span></li>
+  <li class="d-flex"><span>Friday</span><span>9:00 - 02:00</span></li>
+  <li class="d-flex"><span>Saturday</span><span>9:00 - 02:00</span></li>
+  <li class="d-flex"><span>Sunday</span><span> 9:00 - 02:00</span></li>
+  </ul>
+  </div>
+  </div>
+  <div class="col-md-6 col-lg-3">
   <div class="ftco-footer-widget mb-4">
   <h2 class="ftco-heading-2">Instagram</h2>
   <div class="thumb d-sm-flex">
@@ -180,31 +182,32 @@
   </div>
   </div>
   </div>
-<div class="col-md-6 col-lg-3">
-<div class="ftco-footer-widget mb-4">
-<h2 class="ftco-heading-2">Newsletter</h2>
-<p>Subscribe to our newsletter for best food experience</p>
-<form action="#" class="subscribe-form">
-<div class="form-group">
-<input type="text" class="form-control mb-2 text-center" placeholder="Enter email address">
-<input type="submit" value="Subscribe" class="form-control submit px-3">
-</div>
-</form>
-</div>
-</div>
-</div>
-<div class="row">
-<div class="col-md-12 text-center">
-<p>
-Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | BellyfulFoodhub</a>
-</p>
-</div>
-</div>
-</div>
-</footer>
+  <div class="col-md-6 col-lg-3">
+  <div class="ftco-footer-widget mb-4">
+  <h2 class="ftco-heading-2">Newsletter</h2>
+  <p>Far far away, behind the word mountains, far from the countries.</p>
+  <form onsubmit="alert('Thank you for subscribing us!!')" class="subscribe-form">
+    <div class="form-group">
+    <input type="email" class="form-control mb-2 text-center" placeholder="Enter email address" required>
+  <input type="submit" value="Subscribe" class="form-control submit px-3">
+  </div>
+  </form>
+  </div>
+  </div>
+  </div>
+  <div class="row">
+  <div class="col-md-12 text-center">
+  <p>
+  Copyright &copy;<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made by <a href="https://colorlib.com" target="_blank"><b>BellyfulDevelopers</b></a>
+  </p>
+  </div>
+  </div>
+  </div>
+  </footer>
 
 <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" /><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" /></svg></div>
 <script src="js/jquery.min.js"></script>
+<script src="js/main.js"></script>
 <script src="js/jquery-migrate-3.0.1.min.js+popper.min.js+bootstrap.min.js.pagespeed.jc.IQ_SRk8I0J.js"></script><script>eval(mod_pagespeed_JbYhMf9Iz9);</script>
 <script>eval(mod_pagespeed_ckvjIE4Jm9);</script>
 <script>eval(mod_pagespeed_jV5e6asuIo);</script>

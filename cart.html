@@ -7,12 +7,12 @@
 <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css+animate.css+owl.ca.css" />
+<link rel="stylesheet" href="./css/open-iconic-bootstrap.min.css+animate.css+owl.ca.css" />
 </head>
 <body>
 
 <div style="background-image: url(./images/xbg_2.jpg.pagespeed.ic.4YuLMDNFuv.jfif);">
-<div class="my-4 top" style="background-color: rgba(19, 19, 19, 0.75);">
+<div class="pb-5 top" style="background-color: rgba(19, 19, 19, 0.5);">
   <div class="container">
     <div class="row no-gutters d-flex align-items-start align-items-center px-md-0">
       <div class="col-lg-12 d-block">
@@ -33,7 +33,7 @@
 </div>
 </div>
 </div>
-<nav class="navbar pt-4 my-3 navbar-expand-lg ftco_navbar navbar-dark" style="background-color: rgba(19, 19, 19, 0.75);" id="ftco-navbar">
+<nav class="navbar pt-5 navbar-expand-lg ftco_navbar navbar-dark" style="background-color: rgba(19, 19, 19, 0.5);" id="ftco-navbar">
 <div class="container">
 <a class="navbar-brand" href="./index.html">Bellyful Foodhub</a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,12 +41,12 @@
 </button>
 <div class="collapse navbar-collapse" id="ftco-nav">
   <ul class="navbar-nav ml-auto">
-    <li class="nav-item active"><a href="./index.html" class="nav-link">Home</a></li>
-    <li class="nav-item"><a href="./about.html" class="nav-link">About</a></li>
-    <li class="nav-item"><a href="./menu.html" class="nav-link">Menu</a></li>
-    <li class="nav-item"><a href="./contact.html" class="nav-link">Contact</a></li>
-    <li class="nav-item"><a href="./reservation.html" class="nav-link">Order Now</a></li>
-    <li class="nav-item cta"><a class="nav-link">Cart</a></li>
+    <li class="nav-item"><a href="./index.html" class="nav-link" style="color: whitesmoke;">Home</a></li>
+    <li class="nav-item"><a href="./about.html" class="nav-link"  style="color: whitesmoke;">About</a></li>
+    <li class="nav-item"><a href="./menu.html" class="nav-link"  style="color: whitesmoke;">Menu</a></li>
+    <li class="nav-item"><a href="./contact.html" class="nav-link"  style="color: whitesmoke;">Contact</a></li>
+    <li class="nav-item btn btn-primary"><a  style="color: black;" href="./cart.html" class="nav-link"><span class="px-2"><i class="fas fa-cart-plus"></i></span>Cart<span class="px-2" id="itemcount">(0)</span></a></li>
+    <li class="nav-item"><a href="./reservation.html" class="nav-link"  style="color: whitesmoke;">Reserve a table</a></li>
   </ul>
 </div>
 </div>
@@ -65,13 +65,21 @@
             <div class="col-md-12 col-lg-12 justify-content-center align-items-center">
                 <div class="menus ftco-animate justify-content-center align-items-center">
                     <div class="text-center mb-3">
-                        <button class="btn btn-primary" onclick="displayitem(); this.onclick=null;">Load Cart</button>
+                        <button class="btn btn-primary" onclick="displayitem();">Load Cart</button>
                     </div>
+                    
+                        
+             
                     <table class="table table-hover table-bordered border-primary" id=list1>
-                            <tr>
-                              <th scope="col">Item Name(s)</th>
-                              <th scope="col">Price</th>
-                            </tr>
+                        <tr>
+                            <th scope="col">Item Name(s)</th>
+                            <th scope="col">Decrease qty.</th>
+                            
+                            <th scope="col">Increase qty.</th>
+                            <th scope="col">Remove item</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Price</th>
+                        </tr>
                             
                     </table>
                     <div class="text-center mt-3">
@@ -140,9 +148,9 @@
     <div class="ftco-footer-widget mb-4">
     <h2 class="ftco-heading-2">Newsletter</h2>
     <p>Far far away, behind the word mountains, far from the countries.</p>
-    <form action="https://preview.colorlib.com/theme/feliciano/index.html#" class="subscribe-form">
-    <div class="form-group">
-    <input type="text" class="form-control mb-2 text-center" placeholder="Enter email address">
+    <form onsubmit="alert('Thank you for subscribing us!!')" class="subscribe-form">
+      <div class="form-group">
+      <input type="email" class="form-control mb-2 text-center" placeholder="Enter email address" required>
     <input type="submit" value="Subscribe" class="form-control submit px-3">
     </div>
     </form>

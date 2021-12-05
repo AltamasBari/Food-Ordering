@@ -31,23 +31,25 @@
   </div>
   </div>
   </div>
-<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-<div class="container">
-<a class="navbar-brand" href="index.html">Bellyful Foodhub</a>
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-<span class="oi oi-menu"></span> Menu
-</button>
-<div class="collapse navbar-collapse" id="ftco-nav">
-<ul class="navbar-nav ml-auto">
-<li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
-<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-<li class="nav-item active"><a href="./menu.html" class="nav-link">Menu</a></li>
-<li class="nav-item"><a href="./contact.html" class="nav-link">Contact</a></li>
-<li class="nav-item cta"><a href="reservation.html" class="nav-link">Order Now</a></li>
-</ul>
-</div>
-</div>
-</nav>
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+    <a class="navbar-brand" href="./index.html">Bellyful Foodhub</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="oi oi-menu"></span> Menu
+    </button>
+    <div class="collapse navbar-collapse" id="ftco-nav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="./about.html" class="nav-link">About</a></li>
+        <li class="nav-item active"><a href="./menu.html" class="nav-link">Menu</a></li>
+        <li class="nav-item"><a href="./contact.html" class="nav-link">Contact</a></li>
+        <li class="nav-item cta"><a href="./cart.html"  class="nav-link"><span class="px-2"><i class="fas fa-cart-plus"></i></span>Cart<span class="px-2" id="itemcount">(0)</span></a></li>
+        <li class="nav-item"><a href="./reservation.html" class="nav-link">Reserve a table</a></li>
+        
+      </ul>
+    </div>
+    </div>
+    </nav>
 
 <section class="hero-wrap hero-wrap-2" style="background-image: url('./images/xbg_3.jpg.pagespeed.ic.RHn8WPcUap.jfif');" data-stellar-background-ratio="0.5">
 <div class="overlay"></div>
@@ -92,7 +94,7 @@
 </div>
 </div>
 <p><span>Soba Noodles</span>, <span>pan fried tofu</span>, <span>Maple Seeds</span>, <span>Black Pepper Sauce</span></p>
-<p><a href="#" class="btn btn-primary">Order now</a></p>
+<p><button class="btn btn-primary" onclick="additem(this)" data-uid="1" data-name="Japanese Sab Noodles" data-price="Rs.259/-">Add to cart</button></p>
 </div>
 </div>
 </div>
@@ -111,7 +113,7 @@
 </div>
 </div>
 <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-<p><a href="#" class="btn btn-primary">Order now</a></p>
+<p><button class="btn btn-primary" onclick="additem(this)" data-uid="2" data-name="Grilled Chicken with potatoes" data-price="Rs.300/-">Order now</button></p>
 </div>
 </div>
 </div>
@@ -130,7 +132,7 @@
 </div>
 </div>
 <p><span>Chopped Bananas</span>, <span>Sugar-banana syrup</span>, <span>Walnuts</span>, <span>Cashews</span></p>
-<p><a href="#" class="btn btn-primary">Order now</a></p>
+<p><button class="btn btn-primary" onclick="additem(this)" data-uid="3" data-name="Banana Fritters with mini-pancakes" data-price="Rs.165/-">Order now</button></p>
 </div>
 </div>
 </div>
@@ -149,7 +151,9 @@
 </div>
 </div>
 <p><span>Avocado</span>, <span>Indigenous Green Vegies</span>, <span>Black Pepper</span>, <span>Egg White Syrup</span></p>
-<p><a href="#" class="btn btn-primary">Order now</a></p>
+<p><button class="btn btn-primary" onclick="additem(this)" data-uid="6" 
+  data-name="Avocado Club Salad" data-price="Rs.279/-"
+  >Order now</button></p>
 </div>
 </div>
 </div>
@@ -905,34 +909,34 @@
 </div>
 </section>
 <footer class="ftco-footer ftco-bg-dark ftco-section">
-<div class="container">
-<div class="row mb-5">
-<div class="col-md-6 col-lg-3">
-<div class="ftco-footer-widget mb-4">
-<h2 class="ftco-heading-2">Bellyful Foodhub</h2>
-<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
-<li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-<li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-<li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-</ul>
-</div>
-</div>
-<div class="col-md-6 col-lg-3">
-<div class="ftco-footer-widget mb-4">
-<h2 class="ftco-heading-2">Open Hours</h2>
-<ul class="list-unstyled open-hours">
-<li class="d-flex"><span>Monday</span><span>9:00 - 24:00</span></li>
-<li class="d-flex"><span>Tuesday</span><span>9:00 - 24:00</span></li>
-<li class="d-flex"><span>Wednesday</span><span>9:00 - 24:00</span></li>
-<li class="d-flex"><span>Thursday</span><span>9:00 - 24:00</span></li>
-<li class="d-flex"><span>Friday</span><span>9:00 - 02:00</span></li>
-<li class="d-flex"><span>Saturday</span><span>9:00 - 02:00</span></li>
-<li class="d-flex"><span>Sunday</span><span> 9:00 - 02:00</span></li>
-</ul>
-</div>
-</div>
-<div class="col-md-6 col-lg-3">
+  <div class="container">
+  <div class="row mb-5">
+  <div class="col-md-6 col-lg-3">
+  <div class="ftco-footer-widget mb-4">
+  <h2 class="ftco-heading-2">Bellyful Foodhub</h2>
+  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+  <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
+  <li class="ftco-animate"><a href="index.html#"><span class="fab fa-twitter"></span></a></li>
+  <li class="ftco-animate"><a href="index.html#"><span class="fab fa-facebook-messenger"></span></a></li>
+  <li class="ftco-animate"><a href="index.html#"><span class="fab fa-instagram"></span></a></li>
+  </ul>
+  </div>
+  </div>
+  <div class="col-md-6 col-lg-3">
+  <div class="ftco-footer-widget mb-4">
+  <h2 class="ftco-heading-2">Open Hours</h2>
+  <ul class="list-unstyled open-hours">
+  <li class="d-flex"><span>Monday</span><span>9:00 - 24:00</span></li>
+  <li class="d-flex"><span>Tuesday</span><span>9:00 - 24:00</span></li>
+  <li class="d-flex"><span>Wednesday</span><span>9:00 - 24:00</span></li>
+  <li class="d-flex"><span>Thursday</span><span>9:00 - 24:00</span></li>
+  <li class="d-flex"><span>Friday</span><span>9:00 - 02:00</span></li>
+  <li class="d-flex"><span>Saturday</span><span>9:00 - 02:00</span></li>
+  <li class="d-flex"><span>Sunday</span><span> 9:00 - 02:00</span></li>
+  </ul>
+  </div>
+  </div>
+  <div class="col-md-6 col-lg-3">
   <div class="ftco-footer-widget mb-4">
   <h2 class="ftco-heading-2">Instagram</h2>
   <div class="thumb d-sm-flex">
@@ -953,31 +957,32 @@
   </div>
   </div>
   </div>
-<div class="col-md-6 col-lg-3">
-<div class="ftco-footer-widget mb-4">
-<h2 class="ftco-heading-2">Newsletter</h2>
-<p>Subscribe our foodie newsletter for best deals</p>
-<form action="#" class="subscribe-form">
-<div class="form-group">
-<input type="text" class="form-control mb-2 text-center" placeholder="Enter email address">
-<input type="submit" value="Subscribe" class="form-control submit px-3">
-</div>
-</form>
-</div>
-</div>
-</div>
-<div class="row">
-<div class="col-md-12 text-center">
-<p>
-Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | Bellyful Foodhub</a>
-</p>
-</div>
-</div>
-</div>
-</footer>
+  <div class="col-md-6 col-lg-3">
+  <div class="ftco-footer-widget mb-4">
+  <h2 class="ftco-heading-2">Newsletter</h2>
+  <p>Far far away, behind the word mountains, far from the countries.</p>
+  <form onsubmit="alert('Thank you for subscribing us!!')" class="subscribe-form">
+    <div class="form-group">
+    <input type="email" class="form-control mb-2 text-center" placeholder="Enter email address" required>
+  <input type="submit" value="Subscribe" class="form-control submit px-3">
+  </div>
+  </form>
+  </div>
+  </div>
+  </div>
+  <div class="row">
+  <div class="col-md-12 text-center">
+  <p>
+  Copyright &copy;<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made by <a href="https://colorlib.com" target="_blank"><b>BellyfulDevelopers</b></a>
+  </p>
+  </div>
+  </div>
+  </div>
+  </footer>
 
 <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" /><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" /></svg></div>
 <script src="js/jquery.min.js"></script>
+<script src="js/main.js"></script>
 <script src="js/jquery-migrate-3.0.1.min.js+popper.min.js+bootstrap.min.js.pagespeed.jc.IQ_SRk8I0J.js"></script><script>eval(mod_pagespeed_JbYhMf9Iz9);</script>
 <script>eval(mod_pagespeed_ckvjIE4Jm9);</script>
 <script>eval(mod_pagespeed_jV5e6asuIo);</script>
