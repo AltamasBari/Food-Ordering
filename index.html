@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <title>Bellyful Foodhub - Food Ordering Website</title>
+<link rel="shortcut icon" type="image/x-icon" href="./images/logo.png" sizes="16x16">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
@@ -44,7 +45,7 @@
     <li class="nav-item"><a href="./menu.html" class="nav-link">Menu</a></li>
     <li class="nav-item"><a href="./contact.html" class="nav-link">Contact</a></li>
     <li class="nav-item cta"><a href="./cart.html" class="nav-link"><span class="px-2"><i class="fas fa-cart-plus"></i></span>Cart<span class="px-2" id="itemcount">(0)</span></a></li>
-    <li class="nav-item"><a href="./reservation.html" class="nav-link">Reserve a table</a></li>
+    <li class="nav-item"><a href="./reservation.html" class="nav-link">Make Reservation</a></li>
     
   </ul>
 </div>
@@ -194,7 +195,7 @@
 </div>
 <div class="row d-md-flex align-items-center">
 <div class="col-md-12 text-center text-md-center mt-3">
-<p>Customers use our platform to search and discover restaurants, read and write customer generated reviews and view and upload photos, order food delivery, Order Now and make payments while dining-out at restaurants.</p>
+<p>Customers use our platform to search and discover restaurants, read and write customer generated reviews and view and upload photos, order food delivery, Add to Cart and make payments while dining-out at restaurants.</p>
 </div>
 </div>
 </div>
@@ -243,7 +244,7 @@
 </div>
 </div>
 <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-<p><button class="btn btn-primary" onclick="additem(this)" data-uid="2" data-name="Grilled Chicken with potatoes" data-price="Rs.300/-">Order now</button></p>
+<p><button class="btn btn-primary" onclick="additem(this)" data-uid="2" data-name="Grilled Chicken with potatoes" data-price="Rs.300/-">Add to Cart</button></p>
 </div>
 </div>
 </div>
@@ -262,7 +263,7 @@
 </div>
 </div>
 <p><span>Chopped Bananas</span>, <span>Walnuts</span>, <span>Cashews</span>, <span>Sugar Banana Syrup</span></p>
-<p><button class="btn btn-primary" onclick="additem(this)" data-uid="3" data-name="Banana Fritters with mini-pancakes" data-price="Rs.165/-">Order now</button></p>
+<p><button class="btn btn-primary" onclick="additem(this)" data-uid="3" data-name="Banana Fritters with mini-pancakes" data-price="Rs.165/-">Add to Cart</button></p>
 </div>
 </div>
 </div>
@@ -281,7 +282,7 @@
 </div>
 </div>
 <p><span>Fried Chicken</span>, <span>Garlic Chilli Sauce</span>, <span>ButterMilk</span>, <span>Tomatoe</span></p>
-<p><button class="btn btn-primary" onclick="additem(this)" data-uid="4" data-name="Fried Garlic Chicken with sprinkled coriander" data-price="Rs.199/-">Order now</button></p>
+<p><button class="btn btn-primary" onclick="additem(this)" data-uid="4" data-name="Fried Garlic Chicken with sprinkled coriander" data-price="Rs.199/-">Add to Cart</button></p>
 </div>
 </div>
 </div>
@@ -301,7 +302,7 @@
 </div>
 <p><span>Bread Toast</span>, <span>Coriander Leaves</span>, <span>Mayonnaise Sauce</span>, <span>Brocolli</span></p>
 <p><button class="btn btn-primary" onclick="additem(this)" data-uid="5" 
-  data-name="Green Bread Pudding" data-price="Rs.149/-">Order now</button></p>
+  data-name="Green Bread Pudding" data-price="Rs.149/-">Add to Cart</button></p>
 </div>
 </div>
 </div>
@@ -322,7 +323,7 @@
 <p><span>Avocado</span>, <span>Indigenuos Green Vegies</span>, <span>Black Pepper</span>, <span>Egg White</span></p>
 <p><button class="btn btn-primary" onclick="additem(this)" data-uid="6" 
   data-name="Avocado Club Salad" data-price="Rs.279/-"
-  >Order now</button></p>
+  >Add to Cart</button></p>
 </div>
 </div>
 </div>
@@ -336,7 +337,7 @@
 <div class="row d-flex">
 <div class="col-md-7 ftco-animate makereservation p-4 px-md-5 pb-md-5">
 <div class="heading-section ftco-animate mb-5 text-center">
-<span class="subheading">Order Now</span>
+<span class="subheading">Table Reservation</span>
 <h2 class="mb-4">Make Reservation</h2>
 </div>
 <form onsubmit="alert('Your table has been booked. Thank You!!')">
@@ -417,8 +418,8 @@
 </span>
 </div>
 <div class="text p-3">
-<p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-<p class="name">Jason McClean</p>
+<p class="mb-4">Thank you for your food. It’s so fresh and delicious and it takes the work and guess-work out of my busy life when it comes to eating. Awesome Foods is AWESOME! You have a customer for life!</p>
+<p class="name">Rahul Sharma</p>
 <span class="position">Customer</span>
 </div>
 </div>
@@ -431,8 +432,8 @@
 </span>
 </div>
 <div class="text p-3">
-<p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-<p class="name">Mark Stevenson</p>
+<p class="mb-4">I got my large order of Raw Vegan foods in today via UPS and was very impressed with the packaging & freshness as well as the quality of my meals. </p>
+<p class="name">Parag Agarwal</p>
 <span class="position">Customer</span>
 </div>
 </div>
@@ -445,8 +446,8 @@
 </span>
 </div>
 <div class="text p-3">
-<p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-<p class="name">Art Leonard</p>
+<p class="mb-4">I am so happy I discovered you guys! Loved the kale chips, just bought tempura veggies and onion rings. Mmm, and those onions are hot!!</p>
+<p class="name">Raj Vikram</p>
 <span class="position">Customer</span>
 </div>
 </div>
@@ -490,8 +491,7 @@
 <div class="row mb-5">
 <div class="col-md-6 col-lg-3">
 <div class="ftco-footer-widget mb-4">
-<h2 class="ftco-heading-2">Bellyful Foodhub</h2>
-<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+<h2 class="ftco-heading-2">Bellyful Foodhub</h2><p>A place where original flavors of Biryani and good times meet.Familiar Indian & Italian comfort food, including pizza, served in a relaxed atmosphere.</p>
 <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
 <li class="ftco-animate"><a href="index.html#"><span class="fab fa-twitter"></span></a></li>
 <li class="ftco-animate"><a href="index.html#"><span class="fab fa-facebook-messenger"></span></a></li>
@@ -503,13 +503,13 @@
 <div class="ftco-footer-widget mb-4">
 <h2 class="ftco-heading-2">Open Hours</h2>
 <ul class="list-unstyled open-hours">
-<li class="d-flex"><span>Monday</span><span>9:00 - 24:00</span></li>
-<li class="d-flex"><span>Tuesday</span><span>9:00 - 24:00</span></li>
-<li class="d-flex"><span>Wednesday</span><span>9:00 - 24:00</span></li>
-<li class="d-flex"><span>Thursday</span><span>9:00 - 24:00</span></li>
-<li class="d-flex"><span>Friday</span><span>9:00 - 02:00</span></li>
-<li class="d-flex"><span>Saturday</span><span>9:00 - 02:00</span></li>
-<li class="d-flex"><span>Sunday</span><span> 9:00 - 02:00</span></li>
+<li class="d-flex"><span>Monday</span><span>9:00 AM - 9:00 PM</span></li>
+<li class="d-flex"><span>Tuesday</span><span>9:00 AM - 9:00 PM</span></li>
+<li class="d-flex"><span>Wednesday</span><span>9:00 AM - 9:00 PM</span></li>
+<li class="d-flex"><span>Thursday</span><span>9:00 AM - 9:00 PM</span></li>
+<li class="d-flex"><span>Friday</span><span>9:00 AM - 7:00 PM</span></li>
+<li class="d-flex"><span>Saturday</span><span>9:00 AM - 7:00 PM</span></li>
+<li class="d-flex"><span>Sunday</span><span> 9:00 AM - 7:00 PM</span></li>
 </ul>
 </div>
 </div>
@@ -537,7 +537,7 @@
 <div class="col-md-6 col-lg-3">
 <div class="ftco-footer-widget mb-4">
 <h2 class="ftco-heading-2">Newsletter</h2>
-<p>Far far away, behind the word mountains, far from the countries.</p>
+<p>Subscribe to the Bellyful foodie Newsletter</p>
 <form onsubmit="alert('Thank you for subscribing us!!')" class="subscribe-form">
   <div class="form-group">
   <input type="email" class="form-control mb-2 text-center" placeholder="Enter email address" required>
@@ -550,7 +550,7 @@
 <div class="row">
 <div class="col-md-12 text-center">
 <p>
-Copyright &copy;<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made by <a href="https://colorlib.com" target="_blank"><b>BellyfulDevelopers</b></a>
+Copyright &copy;<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made by <a ><b>Aktar and Altamas</b></a>
 </p>
 </div>
 </div>

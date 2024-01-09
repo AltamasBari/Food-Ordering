@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Bellyful Foodhub</title>
+<title>Bellyful Foodhub - Food Ordering Website</title>
+<link rel="shortcut icon" type="image/x-icon" href="./images/logo.png" sizes="16x16">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
@@ -44,7 +45,7 @@
         <li class="nav-item active"><a href="./menu.html" class="nav-link">Menu</a></li>
         <li class="nav-item"><a href="./contact.html" class="nav-link">Contact</a></li>
         <li class="nav-item cta"><a href="./cart.html"  class="nav-link"><span class="px-2"><i class="fas fa-cart-plus"></i></span>Cart<span class="px-2" id="itemcount">(0)</span></a></li>
-        <li class="nav-item"><a href="./reservation.html" class="nav-link">Reserve a table</a></li>
+        <li class="nav-item"><a href="./reservation.html" class="nav-link">Make Reservation</a></li>
         
       </ul>
     </div>
@@ -90,7 +91,7 @@
 <h3>Japanese Soba Noodles</h3>
 </div>
 <div class="one-forth">
-<span class="price">Rs.290/-</span>
+<span class="price">Rs.259/-</span>
 </div>
 </div>
 <p><span>Soba Noodles</span>, <span>pan fried tofu</span>, <span>Maple Seeds</span>, <span>Black Pepper Sauce</span></p>
@@ -109,11 +110,11 @@
 <h3>Grilled Chicken with potatoes</h3>
 </div>
 <div class="one-forth">
-<span class="price">Rs.129/-</span>
+<span class="price">Rs.300/-</span>
 </div>
 </div>
 <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-<p><button class="btn btn-primary" onclick="additem(this)" data-uid="2" data-name="Grilled Chicken with potatoes" data-price="Rs.300/-">Order now</button></p>
+<p><button class="btn btn-primary" onclick="additem(this)" data-uid="2" data-name="Grilled Chicken with potatoes" data-price="Rs.300/-">Add to Cart</button></p>
 </div>
 </div>
 </div>
@@ -128,11 +129,11 @@
   <h3>Banana Fritters with mini-pancake</h3>
 </div>
 <div class="one-forth">
-<span class="price">Rs.159/-</span>
+<span class="price">Rs.165/-</span>
 </div>
 </div>
 <p><span>Chopped Bananas</span>, <span>Sugar-banana syrup</span>, <span>Walnuts</span>, <span>Cashews</span></p>
-<p><button class="btn btn-primary" onclick="additem(this)" data-uid="3" data-name="Banana Fritters with mini-pancakes" data-price="Rs.165/-">Order now</button></p>
+<p><button class="btn btn-primary" onclick="additem(this)" data-uid="3" data-name="Banana Fritters with mini-pancakes" data-price="Rs.165/-">Add to Cart</button></p>
 </div>
 </div>
 </div>
@@ -147,13 +148,13 @@
   <h3>Avocado Club Salad</h3>
 </div>
 <div class="one-forth">
-<span class="price">Rs.329/-</span>
+<span class="price">Rs.279/-</span>
 </div>
 </div>
 <p><span>Avocado</span>, <span>Indigenous Green Vegies</span>, <span>Black Pepper</span>, <span>Egg White Syrup</span></p>
 <p><button class="btn btn-primary" onclick="additem(this)" data-uid="6" 
   data-name="Avocado Club Salad" data-price="Rs.279/-"
-  >Order now</button></p>
+  >Add to Cart</button></p>
 </div>
 </div>
 </div>
@@ -172,7 +173,7 @@
 </div>
 </div>
 <p><span>Boiled Momos</span>, <span>Potatoes</span>, <span>Kurkure</span>, <span>Tomatoes</span></p>
-<p><a href="#" class="btn btn-primary">Order now</a></p>
+<p><button class="btn btn-primary" onclick="additem(this)" data-uid="7" data-name="Kurkure Momos" data-price="Rs.120/-">Add to cart</button></p>
 </div>
 </div>
 </div>
@@ -191,7 +192,7 @@
 </div>
 </div>
 <p><span>Avocado</span>, <span>Indigenous Green Vegies</span>, <span>Black Pepper</span>, <span>Egg White Syrup</span></p>
-<p><a href="#" class="btn btn-primary">Order now</a></p>
+<p><button class="btn btn-primary" onclick="additem(this)" data-uid="8" data-name="Plain Avocado Salad" data-price="Rs.120/-">Add to cart</button></p>
 </div>
 </div>
 </div>
@@ -210,7 +211,7 @@
 </div>
 </div>
 <p><span>Fish</span>, <span>Cabbage</span>, <span>Curry</span>, <span>Dhaniya Patta</span></p>
-<p><a href="#" class="btn btn-primary">Order now</a></p>
+<p><button class="btn btn-primary" onclick="additem(this)" data-uid="9" data-name="Fish Curry" data-price="Rs.210/-">Add to cart</button></p>
 </div>
 </div>
 </div>
@@ -225,11 +226,11 @@
 <h3>Stawberry Salad</h3>
 </div>
 <div class="one-forth">
-<span class="price">$29</span>
+<span class="price">Rs.120/-</span>
 </div>
 </div>
 <p><span>Strawberry</span>, <span>Creamy Milk</span>, <span>Honey</span>, <span>Cherry</span></p>
-<p><a href="#" class="btn btn-primary">Order now</a></p>
+<p><button class="btn btn-primary" onclick="additem(this)" data-uid="10" data-name="Strawberry Salad" data-price="Rs.120/-">Add to cart</button></p>
 </div>
 </div>
 </div>
@@ -245,33 +246,33 @@
 <div>
 <div class="d-flex">
 <div class="one-half">
-<h3>Grilled chicken with potatoes</h3>
+<h3>Chilli Chicken</h3>
 </div>
 <div class="one-forth">
-<span class="price">$29</span>
+<span class="price">Rs.220/-</span>
 </div>
 </div>
 <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-<p><a href="#" class="btn btn-primary">Order now</a></p>
+<p><button class="btn btn-primary" onclick="additem(this)" data-uid="11" data-name="Chilli Chicken" data-price="Rs.220/-">Add to cart</button></p>
 </div>
 </div>
 </div>
 </div>
 <div class="col-md-12 col-lg-6 d-flex align-self-stretch">
 <div class="menus d-sm-flex ftco-animate align-items-stretch">
-<div class="menu-img img" style="background-image: url(./images/lunch-2.jpg);"></div>
+<div class="menu-img img" style="background-image: url(./images/xlunch-3.jpg.pagespeed.ic.gKf96CPu17.webp);"></div>
 <div class="text d-flex align-items-center">
 <div>
 <div class="d-flex">
 <div class="one-half">
-<h3>Grilled chicken with potatoes</h3>
+<h3>Aloo Chicken Tikki</h3>
 </div>
 <div class="one-forth">
-<span class="price">$29</span>
+<span class="price">Rs.150/-</span>
 </div>
 </div>
 <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-<p><a href="#" class="btn btn-primary">Order now</a></p>
+<p><button class="btn btn-primary" onclick="additem(this)" data-uid="12" data-name="Aaloo Chicken Tikki" data-price="Rs.150/-">Add to cart</button></p>
 </div>
 </div>
 </div>
@@ -283,14 +284,14 @@
 <div>
 <div class="d-flex">
 <div class="one-half">
-<h3>Grilled chicken with potatoes</h3>
+<h3>Grilled chilly Chicken</h3>
 </div>
 <div class="one-forth">
-<span class="price">$29</span>
+<span class="price">Rs.240/-</span>
 </div>
 </div>
 <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-<p><a href="#" class="btn btn-primary">Order now</a></p>
+<p><button class="btn btn-primary" onclick="additem(this)" data-uid="13" data-name="Grilled Chilly Chicken" data-price="Rs.240/-">Add to cart</button></p>
 </div>
 </div>
 </div>
@@ -302,14 +303,14 @@
 <div>
 <div class="d-flex">
 <div class="one-half">
-<h3>Grilled chicken with potatoes</h3>
+<h3>Andhra Pepper Fish Fry</h3>
 </div>
 <div class="one-forth">
-<span class="price">$29</span>
+<span class="price">Rs.210/-</span>
 </div>
 </div>
 <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-<p><a href="#" class="btn btn-primary">Order now</a></p>
+<p><button class="btn btn-primary" onclick="additem(this)" data-uid="14" data-name="Andhra Pepper Fish Fry" data-price="Rs.210/-">Add to cart</button></p>
 </div>
 </div>
 </div>
@@ -321,33 +322,33 @@
 <div>
 <div class="d-flex">
 <div class="one-half">
-<h3>Grilled chicken with potatoes</h3>
+<h3>Tandoori Chicken</h3>
 </div>
 <div class="one-forth">
-<span class="price">$29</span>
+<span class="price">Rs.399/-</span>
 </div>
 </div>
 <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-<p><a href="#" class="btn btn-primary">Order now</a></p>
+<p><button class="btn btn-primary" onclick="additem(this)" data-uid="15" data-name="Tandoori Chicken" data-price="Rs.399/-">Add to cart</button></p>
 </div>
 </div>
 </div>
 </div>
 <div class="col-md-12 col-lg-6 d-flex align-self-stretch">
 <div class="menus d-sm-flex ftco-animate align-items-stretch">
-<div class="menu-img img" style="background-image: url(./images/lunch-7.jpg);"></div>
+<div class="menu-img img" style="background-image: url(./images/xlunch-1.jpg.pagespeed.ic.sNRHBBF3--.webp);"></div>
 <div class="text d-flex align-items-center">
 <div>
 <div class="d-flex">
 <div class="one-half">
-<h3>Grilled chicken with potatoes</h3>
+<h3>Chicken Steak Kebab</h3>
 </div>
 <div class="one-forth">
-<span class="price">$29</span>
+<span class="price">Rs.180/-</span>
 </div>
 </div>
 <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-<p><a href="#" class="btn btn-primary">Order now</a></p>
+<p><button class="btn btn-primary" onclick="additem(this)" data-uid="16" data-name="Chicken Steak Kebab" data-price="Rs.180/-">Add to cart</button></p>
 </div>
 </div>
 </div>
@@ -359,14 +360,14 @@
 <div>
 <div class="d-flex">
 <div class="one-half">
-<h3>Grilled chicken with potatoes</h3>
+<h3>Paneer Lajawab</h3>
 </div>
 <div class="one-forth">
-<span class="price">$29</span>
+<span class="price">Rs.295/-</span>
 </div>
 </div>
 <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-<p><a href="#" class="btn btn-primary">Order now</a></p>
+<p><button class="btn btn-primary" onclick="additem(this)" data-uid="17" data-name="Paneer Lajawab" data-price="Rs.295/-">Add to cart</button></p>
 </div>
 </div>
 </div>
@@ -378,14 +379,14 @@
 <div>
 <div class="d-flex">
 <div class="one-half">
-<h3>Grilled chicken with potatoes</h3>
+<h3>Murgh Mushallam</h3>
 </div>
 <div class="one-forth">
-<span class="price">$29</span>
+<span class="price">Rs.320</span>
 </div>
 </div>
 <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-<p><a href="#" class="btn btn-primary">Order now</a></p>
+<p><button class="btn btn-primary" onclick="additem(this)" data-uid="18" data-name="Murgh Mushallam" data-price="Rs.320/-">Add to cart</button></p>
 </div>
 </div>
 </div>
@@ -396,114 +397,114 @@
 <div class="row no-gutters d-flex align-items-stretch">
 <div class="col-md-12 col-lg-6 d-flex align-self-stretch">
 <div class="menus d-sm-flex ftco-animate align-items-stretch">
-<div class="menu-img img" style="background-image: url(./images/dessert-1.jpg);"></div>
+<div class="menu-img img" style="background-image: url(./images/dinner-4.jpg);"></div>
 <div class="text d-flex align-items-center">
 <div>
 <div class="d-flex">
 <div class="one-half">
-<h3>Grilled chicken with potatoes</h3>
+<h3>Fish Salad</h3>
 </div>
 <div class="one-forth">
-<span class="price">$29</span>
+<span class="price">Rs.230/-</span>
 </div>
 </div>
 <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-<p><a href="#" class="btn btn-primary">Order now</a></p>
+<p><button class="btn btn-primary" onclick="additem(this)" data-uid="19" data-name="Fish Salad" data-price="Rs.230/-">Add to cart</button></p>
 </div>
 </div>
 </div>
 </div>
 <div class="col-md-12 col-lg-6 d-flex align-self-stretch">
 <div class="menus d-sm-flex ftco-animate align-items-stretch">
-<div class="menu-img img" style="background-image: url(./images/xdessert-2.jpg.pagespeed.ic.BXQ6C9WlQC.webp);"></div>
+<div class="menu-img img" style="background-image: url(./images/xdinner-1.jpg.pagespeed.ic.mReVAn4H37.webp);"></div>
 <div class="text d-flex align-items-center">
 <div>
 <div class="d-flex">
 <div class="one-half">
-<h3>Grilled chicken with potatoes</h3>
+<h3>Chicken Nuggets with Lemon</h3>
 </div>
 <div class="one-forth">
-<span class="price">$29</span>
+<span class="price">Rs.200/-</span>
 </div>
 </div>
 <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-<p><a href="#" class="btn btn-primary">Order now</a></p>
+<p><button class="btn btn-primary" onclick="additem(this)" data-uid="20" data-name="Chicken Nuggets with Lemon" data-price="Rs.200/-">Add to cart</button></a></p>
 </div>
 </div>
 </div>
 </div>
 <div class="col-md-12 col-lg-6 d-flex align-self-stretch">
 <div class="menus d-sm-flex ftco-animate align-items-stretch">
-<div class="menu-img img order-md-last" style="background-image: url(images/dinner-3.jpg);"></div>
+<div class="menu-img img order-md-last" style="background-image: url(./images/xdinner-2.jpg.pagespeed.ic.Zhcy2e7KUf.webp);"></div>
 <div class="text d-flex align-items-center">
 <div>
 <div class="d-flex">
 <div class="one-half">
-<h3>Grilled chicken with potatoes</h3>
+<h3>Chinese Noodles</h3>
 </div>
 <div class="one-forth">
-<span class="price">$29</span>
+<span class="price">Rs.249/-</span>
 </div>
 </div>
 <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-<p><a href="#" class="btn btn-primary">Order now</a></p>
+<p><button class="btn btn-primary" onclick="additem(this)" data-uid="21" data-name="Chinese Noodles" data-price="Rs.249/-">Add to cart</button></p>
 </div>
 </div>
 </div>
 </div>
 <div class="col-md-12 col-lg-6 d-flex align-self-stretch">
 <div class="menus d-sm-flex ftco-animate align-items-stretch">
-<div class="menu-img img order-md-last" style="background-image: url(images/dinner-4.jpg);"></div>
+<div class="menu-img img order-md-last" style="background-image: url(./images/xdinner-3.jpg.pagespeed.ic.5sRLZ4Qsh-.webp);"></div>
 <div class="text d-flex align-items-center">
 <div>
 <div class="d-flex">
 <div class="one-half">
-<h3>Grilled chicken with potatoes</h3>
+<h3>Omlette with Mushroom</h3>
 </div>
 <div class="one-forth">
-<span class="price">$29</span>
+<span class="price">Rs.150/-</span>
 </div>
 </div>
 <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-<p><a href="#" class="btn btn-primary">Order now</a></p>
+<p><button class="btn btn-primary" onclick="additem(this)" data-uid="22" data-name="Omlette with Mushroom" data-price="Rs.1500/-">Add to cart</button></p>
 </div>
 </div>
 </div>
 </div>
 <div class="col-md-12 col-lg-6 d-flex align-self-stretch">
 <div class="menus d-sm-flex ftco-animate align-items-stretch">
-<div class="menu-img img" style="background-image: url(images/dinner-5.jpg);"></div>
+<div class="menu-img img" style="background-image: url(./images/xdinner-5.jpg.pagespeed.ic.qe-BcFE22E.webp);"></div>
 <div class="text d-flex align-items-center">
 <div>
 <div class="d-flex">
 <div class="one-half">
-<h3>Grilled chicken with potatoes</h3>
+<h3>Hong-Kong Chowpsy</h3>
 </div>
 <div class="one-forth">
-<span class="price">$29</span>
+<span class="price">Rs.180/-</span>
 </div>
 </div>
 <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-<p><a href="#" class="btn btn-primary">Order now</a></p>
+<p><button class="btn btn-primary" onclick="additem(this)" data-uid="23" data-name="Hong-Kong Chowpsy" data-price="Rs.180/-">Add to cart</button></p>
 </div>
 </div>
 </div>
 </div>
 <div class="col-md-12 col-lg-6 d-flex align-self-stretch">
 <div class="menus d-sm-flex ftco-animate align-items-stretch">
-<div class="menu-img img" style="background-image: url(images/dinner-6.jpg);"></div>
+<div class="menu-img img" style="background-image: url(./images/xdinner-6.jpg.pagespeed.ic.msvbFPWuaG.webp);"></div>
 <div class="text d-flex align-items-center">
 <div>
 <div class="d-flex">
 <div class="one-half">
-<h3>Grilled chicken with potatoes</h3>
+<h3>Bread with Egg Pouch</h3>
 </div>
 <div class="one-forth">
-<span class="price">$29</span>
+<span class="price">Rs.120/-</span>
 </div>
 </div>
 <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-<p><a href="#" class="btn btn-primary">Order now</a></p>
+<p><button class="btn btn-primary" onclick="additem(this)" data-uid="24" data-name="Bread with Egg Pouch" data-price="Rs.120/-">Add to cart</button></p>
 </div>
 </div>
 </div>
@@ -514,114 +515,114 @@
 <div class="row no-gutters d-flex align-items-stretch">
 <div class="col-md-12 col-lg-6 d-flex align-self-stretch">
 <div class="menus d-sm-flex ftco-animate align-items-stretch">
-<div class="menu-img img" style="background-image: url(images/drink-1.jpg);"></div>
+<div class="menu-img img" style="background-image: url(./images/xdrink-1.jpg.pagespeed.ic.DbB-WtH3Ap.webp);"></div>
 <div class="text d-flex align-items-center">
 <div>
 <div class="d-flex">
 <div class="one-half">
-<h3>Grilled chicken with potatoes</h3>
+<h3>Orange Lemonade</h3>
 </div>
 <div class="one-forth">
-<span class="price">$29</span>
+<span class="price">Rs.150/-</span>
 </div>
 </div>
 <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-<p><a href="#" class="btn btn-primary">Order now</a></p>
+<p><button class="btn btn-primary" onclick="additem(this)" data-uid="25" data-name="Orange Lemonade" data-price="Rs.150/-">Add to cart</button></p>
 </div>
 </div>
 </div>
 </div>
 <div class="col-md-12 col-lg-6 d-flex align-self-stretch">
 <div class="menus d-sm-flex ftco-animate align-items-stretch">
-<div class="menu-img img" style="background-image: url(images/drink-2.jpg);"></div>
+<div class="menu-img img" style="background-image: url(./images/xdrink-2.jpg.pagespeed.ic.XIjMFQ2_Yx.webp);"></div>
 <div class="text d-flex align-items-center">
 <div>
 <div class="d-flex">
 <div class="one-half">
-<h3>Grilled chicken with potatoes</h3>
+<h3>Plain Lemonade</h3>
 </div>
 <div class="one-forth">
-<span class="price">$29</span>
+<span class="price">Rs.100</span>
 </div>
 </div>
 <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-<p><a href="#" class="btn btn-primary">Order now</a></p>
+<p><button class="btn btn-primary" onclick="additem(this)" data-uid="26" data-name="Plain Lemonade" data-price="Rs.100/-">Add to cart</button></p>
 </div>
 </div>
 </div>
 </div>
 <div class="col-md-12 col-lg-6 d-flex align-self-stretch">
 <div class="menus d-sm-flex ftco-animate align-items-stretch">
-<div class="menu-img img order-md-last" style="background-image: url(images/drink-3.jpg);"></div>
+<div class="menu-img img order-md-last" style="background-image: url(./images/xdrink-3.jpg.pagespeed.ic.I_yJ4zdQ_N.webp);"></div>
 <div class="text d-flex align-items-center">
 <div>
 <div class="d-flex">
 <div class="one-half">
-<h3>Grilled chicken with potatoes</h3>
+<h3>Pulpy Orange Juice</h3>
 </div>
 <div class="one-forth">
-<span class="price">$29</span>
+<span class="price">Rs.130/-</span>
 </div>
 </div>
 <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-<p><a href="#" class="btn btn-primary">Order now</a></p>
+<p><button class="btn btn-primary" onclick="additem(this)" data-uid="27" data-name="Pulpy Orange Juice" data-price="Rs.130/-">Add to cart</button></p>
 </div>
 </div>
 </div>
 </div>
 <div class="col-md-12 col-lg-6 d-flex align-self-stretch">
 <div class="menus d-sm-flex ftco-animate align-items-stretch">
-<div class="menu-img img order-md-last" style="background-image: url(images/drink-4.jpg);"></div>
+<div class="menu-img img order-md-last" style="background-image: url(./images/xdrink-5.jpg.pagespeed.ic.EX7Jf7WYaE.webp);"></div>
 <div class="text d-flex align-items-center">
 <div>
 <div class="d-flex">
 <div class="one-half">
-<h3>Grilled chicken with potatoes</h3>
+<h3>Green Apple Spider</h3>
 </div>
 <div class="one-forth">
-<span class="price">$29</span>
+<span class="price">Rs.119/-</span>
 </div>
 </div>
 <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-<p><a href="#" class="btn btn-primary">Order now</a></p>
+<p><button class="btn btn-primary" onclick="additem(this)" data-uid="28" data-name="Green Apple Spider" data-price="Rs.119/-">Add to cart</button></p>
 </div>
 </div>
 </div>
 </div>
 <div class="col-md-12 col-lg-6 d-flex align-self-stretch">
 <div class="menus d-sm-flex ftco-animate align-items-stretch">
-<div class="menu-img img" style="background-image: url(images/drink-5.jpg);"></div>
+<div class="menu-img img" style="background-image: url(./images/xdrink-6.jpg.pagespeed.ic.zpU0929gt6.webp);"></div>
 <div class="text d-flex align-items-center">
 <div>
 <div class="d-flex">
 <div class="one-half">
-<h3>Grilled chicken with potatoes</h3>
+<h3>Virgin Mojito</h3>
 </div>
 <div class="one-forth">
-<span class="price">$29</span>
+<span class="price">Rs.149/-</span>
 </div>
 </div>
 <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-<p><a href="#" class="btn btn-primary">Order now</a></p>
+<p><button class="btn btn-primary" onclick="additem(this)" data-uid="29" data-name="Virgin Mojito" data-price="Rs.149/-">Add to cart</button></p>
 </div>
 </div>
 </div>
 </div>
 <div class="col-md-12 col-lg-6 d-flex align-self-stretch">
 <div class="menus d-sm-flex ftco-animate align-items-stretch">
-<div class="menu-img img" style="background-image: url(images/drink-6.jpg);"></div>
+<div class="menu-img img" style="background-image: url(./images/drink-4.jpg);"></div>
 <div class="text d-flex align-items-center">
 <div>
 <div class="d-flex">
 <div class="one-half">
-<h3>Grilled chicken with potatoes</h3>
+<h3>Chilled Masala Coke</h3>
 </div>
 <div class="one-forth">
-<span class="price">$29</span>
+<span class="price">Rs.130/-</span>
 </div>
 </div>
 <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-<p><a href="#" class="btn btn-primary">Order now</a></p>
+<p><button class="btn btn-primary" onclick="additem(this)" data-uid="30" data-name="Chilled Masala" data-price="Rs.130/-">Add to cart</button></p>
 </div>
 </div>
 </div>
@@ -637,33 +638,33 @@
 <div>
 <div class="d-flex">
 <div class="one-half">
-<h3>Grilled chicken with potatoes</h3>
+<h3>Honey Pancakes</h3>
 </div>
 <div class="one-forth">
-<span class="price">$29</span>
+<span class="price">Rs.210/-</span>
 </div>
 </div>
 <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-<p><a href="#" class="btn btn-primary">Order now</a></p>
+<p><button class="btn btn-primary" onclick="additem(this)" data-uid="31" data-name="Honey Pancakes" data-price="Rs.210/-">Add to cart</button></p>
 </div>
 </div>
 </div>
 </div>
 <div class="col-md-12 col-lg-6 d-flex align-self-stretch">
 <div class="menus d-sm-flex ftco-animate align-items-stretch">
-<div class="menu-img img" style="background-image: url(images/dessert-2.jpg);"></div>
+<div class="menu-img img" style="background-image: url(./images/xdessert-2.jpg.pagespeed.ic.BXQ6C9WlQC.webp);"></div>
 <div class="text d-flex align-items-center">
 <div>
 <div class="d-flex">
 <div class="one-half">
-<h3>Grilled chicken with potatoes</h3>
+<h3>Chocochip Vanilla Icecream</h3>
 </div>
 <div class="one-forth">
-<span class="price">$29</span>
+<span class="price">Rs.160/-</span>
 </div>
 </div>
 <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-<p><a href="#" class="btn btn-primary">Order now</a></p>
+<p><button class="btn btn-primary" onclick="additem(this)" data-uid="32" data-name="Chocochip Vanilla Icecream" data-price="Rs.160/-">Add to cart</button></p>
 </div>
 </div>
 </div>
@@ -675,233 +676,78 @@
 <div>
 <div class="d-flex">
 <div class="one-half">
-<h3>Grilled chicken with potatoes</h3>
+<h3>Chocolate Brownie</h3>
 </div>
 <div class="one-forth">
-<span class="price">$29</span>
+<span class="price">Rs.149/-</span>
 </div>
 </div>
 <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-<p><a href="#" class="btn btn-primary">Order now</a></p>
+<p><button class="btn btn-primary" onclick="additem(this)" data-uid="33" data-name="Chocolate Brownie" data-price="Rs.249/-">Add to cart</button></p>
 </div>
 </div>
 </div>
 </div>
 <div class="col-md-12 col-lg-6 d-flex align-self-stretch">
 <div class="menus d-sm-flex ftco-animate align-items-stretch">
-<div class="menu-img img order-md-last" style="background-image: url(images/dessert-4.jpg);"></div>
+<div class="menu-img img order-md-last" style="background-image: url(./images/xdessert-4.jpg.pagespeed.ic.OWCLbcRcc2.webp);"></div>
 <div class="text d-flex align-items-center">
 <div>
 <div class="d-flex">
 <div class="one-half">
-<h3>Grilled chicken with potatoes</h3>
+<h3>Strawberry Cone</h3>
 </div>
 <div class="one-forth">
-<span class="price">$29</span>
+<span class="price">Rs.120/-</span>
 </div>
 </div>
 <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-<p><a href="#" class="btn btn-primary">Order now</a></p>
+<p><button class="btn btn-primary" onclick="additem(this)" data-uid="34" data-name="Strawberry Cone" data-price="Rs.120/-">Add to cart</button></p>
 </div>
 </div>
 </div>
 </div>
 <div class="col-md-12 col-lg-6 d-flex align-self-stretch">
 <div class="menus d-sm-flex ftco-animate align-items-stretch">
-<div class="menu-img img" style="background-image: url(images/dessert-5.jpg);"></div>
+<div class="menu-img img" style="background-image: url(./images/xdessert-5.jpg.pagespeed.ic._M-d0jMry2.webp);"></div>
 <div class="text d-flex align-items-center">
 <div>
 <div class="d-flex">
 <div class="one-half">
-<h3>Grilled chicken with potatoes</h3>
+<h3>Icy Cupcake</h3>
 </div>
 <div class="one-forth">
-<span class="price">$29</span>
+<span class="price">Rs.189/-</span>
 </div>
 </div>
 <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-<p><a href="#" class="btn btn-primary">Order now</a></p>
+<p><button class="btn btn-primary" onclick="additem(this)" data-uid="35" data-name="Icy Cupcake" data-price="Rs.189/-">Add to cart</button></p>
 </div>
 </div>
 </div>
 </div>
 <div class="col-md-12 col-lg-6 d-flex align-self-stretch">
 <div class="menus d-sm-flex ftco-animate align-items-stretch">
-<div class="menu-img img" style="background-image: url(images/drink-6.jpg);"></div>
+<div class="menu-img img" style="background-image: url(./images/dessert-3.jpg);"></div>
 <div class="text d-flex align-items-center">
 <div>
 <div class="d-flex">
 <div class="one-half">
-<h3>Grilled chicken with potatoes</h3>
+<h3>Sizzling Brownie</h3>
 </div>
 <div class="one-forth">
-<span class="price">$29</span>
+<span class="price">Rs.179</span>
 </div>
 </div>
 <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-<p><a href="#" class="btn btn-primary">Order now</a></p>
+<p><button class="btn btn-primary" onclick="additem(this)" data-uid="36" data-name="Sizzling Brownie" data-price="Rs.179/-">Add to cart</button></p>
 </div>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="tab-pane fade" id="v-pills-6" role="tabpanel" aria-labelledby="v-pills-day-6-tab">
-<div class="row no-gutters d-flex align-items-stretch">
-<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
-<div class="menus d-sm-flex ftco-animate align-items-stretch">
-<div class="menu-img img" style="background-image: url(images/wine-1.jpg);"></div>
-<div class="text d-flex align-items-center">
-<div>
-<div class="d-flex">
-<div class="one-half">
-<h3>Grilled chicken with potatoes</h3>
-</div>
-<div class="one-forth">
-<span class="price">$29</span>
-</div>
-</div>
-<p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-<p><a href="#" class="btn btn-primary">Order now</a></p>
-</div>
-</div>
-</div>
-</div>
-<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
-<div class="menus d-sm-flex ftco-animate align-items-stretch">
-<div class="menu-img img" style="background-image: url(images/wine-2.jpg);"></div>
-<div class="text d-flex align-items-center">
-<div>
-<div class="d-flex">
-<div class="one-half">
-<h3>Grilled chicken with potatoes</h3>
-</div>
-<div class="one-forth">
-<span class="price">$29</span>
-</div>
-</div>
-<p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-<p><a href="#" class="btn btn-primary">Order now</a></p>
-</div>
-</div>
-</div>
-</div>
-<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
-<div class="menus d-sm-flex ftco-animate align-items-stretch">
-<div class="menu-img img order-md-last" style="background-image: url(images/wine-3.jpg);"></div>
-<div class="text d-flex align-items-center">
-<div>
-<div class="d-flex">
-<div class="one-half">
-<h3>Grilled chicken with potatoes</h3>
-</div>
-<div class="one-forth">
-<span class="price">$29</span>
-</div>
-</div>
-<p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-<p><a href="#" class="btn btn-primary">Order now</a></p>
-</div>
-</div>
-</div>
-</div>
-<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
-<div class="menus d-sm-flex ftco-animate align-items-stretch">
-<div class="menu-img img order-md-last" style="background-image: url(images/wine-4.jpg);"></div>
-<div class="text d-flex align-items-center">
-<div>
-<div class="d-flex">
-<div class="one-half">
-<h3>Grilled chicken with potatoes</h3>
-</div>
-<div class="one-forth">
-<span class="price">$29</span>
-</div>
-</div>
-<p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-<p><a href="#" class="btn btn-primary">Order now</a></p>
-</div>
-</div>
-</div>
-</div>
-<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
-<div class="menus d-sm-flex ftco-animate align-items-stretch">
-<div class="menu-img img" style="background-image: url(images/wine-5.jpg);"></div>
-<div class="text d-flex align-items-center">
-<div>
-<div class="d-flex">
-<div class="one-half">
-<h3>Grilled chicken with potatoes</h3>
-</div>
-<div class="one-forth">
-<span class="price">$29</span>
-</div>
-</div>
-<p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-<p><a href="#" class="btn btn-primary">Order now</a></p>
-</div>
-</div>
-</div>
-</div>
-<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
-<div class="menus d-sm-flex ftco-animate align-items-stretch">
-<div class="menu-img img" style="background-image: url(images/wine-6.jpg);"></div>
-<div class="text d-flex align-items-center">
-<div>
-<div class="d-flex">
-<div class="one-half">
-<h3>Grilled chicken with potatoes</h3>
-</div>
-<div class="one-forth">
-<span class="price">$29</span>
-</div>
-</div>
-<p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-<p><a href="#" class="btn btn-primary">Order now</a></p>
-</div>
-</div>
-</div>
-</div>
-<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
-<div class="menus d-sm-flex ftco-animate align-items-stretch">
-<div class="menu-img img order-md-last" style="background-image: url(images/wine-7.jpg);"></div>
-<div class="text d-flex align-items-center">
-<div>
-<div class="d-flex">
-<div class="one-half">
-<h3>Grilled chicken with potatoes</h3>
-</div>
-<div class="one-forth">
-<span class="price">$29</span>
-</div>
-</div>
-<p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-<p><a href="#" class="btn btn-primary">Order now</a></p>
-</div>
-</div>
-</div>
-</div>
-<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
-<div class="menus d-sm-flex ftco-animate align-items-stretch">
-<div class="menu-img img order-md-last" style="background-image: url(images/wine-8.jpg);"></div>
-<div class="text d-flex align-items-center">
-<div>
-<div class="d-flex">
-<div class="one-half">
-<h3>Grilled chicken with potatoes</h3>
-</div>
-<div class="one-forth">
-<span class="price">$29</span>
-</div>
-</div>
-<p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-<p><a href="#" class="btn btn-primary">Order now</a></p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+
 </div>
 </div>
 </div>
@@ -914,7 +760,7 @@
   <div class="col-md-6 col-lg-3">
   <div class="ftco-footer-widget mb-4">
   <h2 class="ftco-heading-2">Bellyful Foodhub</h2>
-  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+  <p>A place where original flavors of Biryani and good times meet.Familiar Indian & Italian comfort food, including pizza, served in a relaxed atmosphere.</p>
   <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
   <li class="ftco-animate"><a href="index.html#"><span class="fab fa-twitter"></span></a></li>
   <li class="ftco-animate"><a href="index.html#"><span class="fab fa-facebook-messenger"></span></a></li>
@@ -926,13 +772,13 @@
   <div class="ftco-footer-widget mb-4">
   <h2 class="ftco-heading-2">Open Hours</h2>
   <ul class="list-unstyled open-hours">
-  <li class="d-flex"><span>Monday</span><span>9:00 - 24:00</span></li>
-  <li class="d-flex"><span>Tuesday</span><span>9:00 - 24:00</span></li>
-  <li class="d-flex"><span>Wednesday</span><span>9:00 - 24:00</span></li>
-  <li class="d-flex"><span>Thursday</span><span>9:00 - 24:00</span></li>
-  <li class="d-flex"><span>Friday</span><span>9:00 - 02:00</span></li>
-  <li class="d-flex"><span>Saturday</span><span>9:00 - 02:00</span></li>
-  <li class="d-flex"><span>Sunday</span><span> 9:00 - 02:00</span></li>
+  <li class="d-flex"><span>Monday</span><span>9:00 AM - 9:00 PM</span></li>
+  <li class="d-flex"><span>Tuesday</span><span>9:00 AM - 9:00 PM</span></li>
+  <li class="d-flex"><span>Wednesday</span><span>9:00 AM - 9:00 PM</span></li>
+  <li class="d-flex"><span>Thursday</span><span>9:00 AM - 9:00 PM</span></li>
+  <li class="d-flex"><span>Friday</span><span>9:00 AM - 7:00 PM</span></li>
+  <li class="d-flex"><span>Saturday</span><span>9:00 AM - 7:00 PM</span></li>
+  <li class="d-flex"><span>Sunday</span><span> 9:00 AM - 7:00 PM</span></li>
   </ul>
   </div>
   </div>
@@ -960,7 +806,7 @@
   <div class="col-md-6 col-lg-3">
   <div class="ftco-footer-widget mb-4">
   <h2 class="ftco-heading-2">Newsletter</h2>
-  <p>Far far away, behind the word mountains, far from the countries.</p>
+  <p>Subscribe to the Bellyful foodie Newsletter</p>
   <form onsubmit="alert('Thank you for subscribing us!!')" class="subscribe-form">
     <div class="form-group">
     <input type="email" class="form-control mb-2 text-center" placeholder="Enter email address" required>
@@ -973,7 +819,7 @@
   <div class="row">
   <div class="col-md-12 text-center">
   <p>
-  Copyright &copy;<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made by <a href="https://colorlib.com" target="_blank"><b>BellyfulDevelopers</b></a>
+  Copyright &copy;<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made by <a ><b>Aktar and Altamas</b></a>
   </p>
   </div>
   </div>

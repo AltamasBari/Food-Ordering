@@ -5,7 +5,11 @@ const useState = (defaultValue) => {
   return [getValue, setValue];
 };
 
-const [cart, updCart] = useState(JSON.parse(localStorage.getItem("itemlist")));
+const [cart, updCart] = useState([]);
+var orderlist = localStorage.getItem("itemlist");
+if (orderlist){
+  updCart(JSON.parse(orderlist));
+}
 window.onload = function cartsize() {
   document.getElementById("itemcount").innerText = "(" + cart().length + ")";
   displayitem();
